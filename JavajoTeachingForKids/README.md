@@ -174,3 +174,21 @@ src/main/resources/satic/top.html
 8．手順4～6の通りモンスターを攻撃
 
 ### モンスターのHPを0にするとClear!!
+
+# for Azure Webapps deploy
+
+1. JavajoTeachingForKids ディレクトリをでGradleタスク実行
+    - clean
+    - build
+1. WebAppsの作成
+    - Java8最新
+    - Windowsサーバ
+    - Tomcat8.5最新
+1. JavajoTeachingForKidsディレクトリ内にあるweb.configをWebAppsのwwwroot直下に配置
+1. 最初のGradleタスク実行で作成されたjarファイルをwwwroot配下に配置 
+
+## jarの更新
+
+1. WebAppsの停止(削除じゃないよ)
+1. jarの差し替え
+1. Webappsの起動
